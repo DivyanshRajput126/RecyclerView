@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerView;
         ArrayList<contact_model>  arrContacts= new ArrayList<>();
 
+//        This is new Change
+
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         arrContacts.add(new contact_model(R.drawable.cont, "Divyansh", "9023848410"));
