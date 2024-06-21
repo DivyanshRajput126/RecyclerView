@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="11dp">
+
+            <ImageView
+                android:src="@drawable/cont"
+                android:id="@+id/contactImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="#C6F492"
+                android:contentDescription="@string/contact_image"/>
+            <LinearLayout
+                android:id="@+id/newLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="11dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp">
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/textName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:fontFamily="Times New Roman"/>
+
+                <TextView
+                    android:id="@+id/textNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="Times New Roman"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
